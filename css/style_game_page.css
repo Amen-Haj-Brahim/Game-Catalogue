@@ -1,3 +1,55 @@
-html{
+.gradient-background {
+    background: linear-gradient(120deg, #49b4d2, #6c956c, #3f9144, yellowgreen);
+    background-size: 240% 240%;
+    animation: gradient-animation 12s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 30% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 30% 50%;
+    }
+}
+
+.midbg {
     background-color: yellowgreen;
+    width: 1200px;
+    height: 3800px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img {
+    position: absolute;
+}
+
+.game-img {
+    border-radius: 20px;
+    transform: scale(120%);
+    top: 10%;
+    left: 25%;
+}
+
+
+.game-title{
+    position: absolute;
+    left:50%;
+    font-size: 70px;
+    font-family: 'Kreon';
+    margin: 20px;
+}
+.game-description {
+    font-size: 20px;
+    top: 15%;
+    left: 50%;
+    position: absolute;
+    font-family: 'Kreon';
 }
