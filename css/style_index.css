@@ -1,5 +1,10 @@
-html {
-    background-color: rgb(53, 105, 43);
+body {
+    background-image: url(../images/bg6.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: fill;
+    background-size: 200%;
+    background-position: center;
 }
 
 header {
@@ -14,7 +19,7 @@ header {
 .midbg {
     background-color: yellowgreen;
     width: 1200px;
-    height: 3700px;
+    height: 3800px;
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -27,9 +32,11 @@ h2 {
 }
 
 p {
+    bottom: 50px;
     position: relative;
     font-family: 'Kreon';
     text-align: center;
+    font-size: 30px;
 }
 
 .grid-container {
@@ -59,9 +66,10 @@ img:hover {
     box-shadow: 0 0 20px 8px rgba(41, 41, 41, 0.466);
     transform: scale(105%);
     transition: all ease 0.2s;
-    background-image:url(/gifs/A_Shot_Hike.gif);
+    background-image: url(/gifs/A_Shot_Hike.gif);
 }
-img{
+
+img {
     transform: scale(100%);
     transition: all ease 0.2s;
 }
