@@ -1,27 +1,67 @@
-body{
-    background-color:rgb(53, 105, 43) ;
+html {
+    background-color: rgb(53, 105, 43);
 }
+
 header {
-    position: absolute;
-    left: 50%;
-    top: 10%;
-    transform: translate(-50%, -50%);
+    bottom: 50px;
+    font-size: 45px;
+    font-family: 'Kreon';
+    position: relative;
+    text-align: center;
     padding: 10px;
 }
 
-div {
+.midbg {
     background-color: yellowgreen;
-    width: 1100px;
-    height:4000px;
-    position:absolute;
-    z-index: 2;
+    width: 1200px;
+    height: 3700px;
+    position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+h2 {
+    font-family: 'Kreon';
+    position: relative;
+    text-align: center;
+}
+
+p {
+    position: relative;
+    font-family: 'Kreon';
+    text-align: center;
+}
+
+.grid-container {
+    left: 22.5%;
+    position: relative;
+    display: grid;
+    height: 75%;
+    width: 20%;
+    align-content: center;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
     padding: 10px;
 }
-h2{
-    z-index:3;
+
+.grid-container>div {
     position: relative;
-    top: 500px;
     text-align: center;
+    padding: 50px 10px;
+}
+
+img {
+    max-height: 316px;
+    max-width: 316x;
+}
+
+img:hover {
+    box-shadow: 0 0 20px 8px rgba(41, 41, 41, 0.466);
+    transform: scale(105%);
+    transition: all ease 0.2s;
+    background-image:url(/gifs/A_Shot_Hike.gif);
+}
+img{
+    transform: scale(100%);
+    transition: all ease 0.2s;
 }
