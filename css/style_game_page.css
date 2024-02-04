@@ -21,35 +21,129 @@
 .midbg {
     background-color: yellowgreen;
     width: 1200px;
-    height: 3800px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-img {
-    position: absolute;
+    height: 4800px;
+    margin: 0 auto;
 }
 
 .game-img {
     border-radius: 20px;
     transform: scale(120%);
-    top: 10%;
-    left: 25%;
+    margin-left: auto;
+    margin-top: auto;
+    --a: 8deg;
+    --s: 1;
+    transform: scale(calc(100%*var(--s))) perspective(400px) rotate3d(var(--r, 1, -1), 0, calc(var(--i, 0)*var(--a)));
+    mask:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, #ffffff, rgba(255, 255, 255, 0.8) 100%) 100% 100%/250% 250%;
+    transition: .3s;
+    cursor: pointer;
 }
 
+.game-img:hover {
+    --i: -2;
+    mask-position: 0 0;
+    --s: 1.2;
+}
 
-.game-title{
-    position: absolute;
-    left:50%;
+.game-title {
+    text-shadow: 5px 5px 10px black;
+    color: rgb(217, 255, 140);
+    margin: 0 auto;
+    position: relative;
+    left: 10%;
     font-size: 70px;
     font-family: 'Kreon';
-    margin: 20px;
 }
+
 .game-description {
-    font-size: 20px;
-    top: 15%;
-    left: 50%;
-    position: absolute;
+    color: rgb(217, 255, 140);
+    text-shadow: 5px 5px 10px black;
+    font-size: 23px;
+    width: 500px;
+    margin-left:600px; 
     font-family: 'Kreon';
+}
+
+.upper_section {
+    box-shadow: 0px 0px 10px 1px black;
+    margin: 0 auto;
+    width: 1100px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: #3f9144;
+    margin-bottom: 200px;
+}
+
+/*---------------------------gallery---------------------*/
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    transform: scale(50%);
+    height: 640px;
+    width: 480px;
+    margin: 0 auto;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 53%;
+    transform: scale(-350%);
+    width: auto;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+}
+
+.mySlides>img {
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 1px black;
+}
+
+.prev {
+    margin-left: -10%;
+}
+
+/* Position the "next button" to the right */
+.next {
+    border-radius: 3px 0 0 3px;
+    left: 1315px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+
+    transition: all ease 0.2s;
+}
+
+.screenshotstext {
+    text-shadow: 5px 5px 10px black;
+    -webkit-text-stroke: 0.5px black;
+    font-size: 50px;
+    transform: translate(0, 600px);
+    position: relative;
+    color: yellowgreen;
+    text-align: center;
+    font-family: 'Kreon';
+}
+
+.screenshots_trailer {
+    box-shadow: 0px 0px 10px 1px black;
+    margin: 0 auto;
+    width: 1100px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: #3f9144;
+}
+
+iframe {
+    width: 480px;
 }

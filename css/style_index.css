@@ -15,7 +15,7 @@ header {
     text-align: center;
     padding: 10px;
 }
-
+/*---*/
 .midbg {
     background: linear-gradient(3deg, #1faa37, #8cc341, #8cc341, #18abb4);
     background-size: 800% 800%;
