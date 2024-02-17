@@ -1,42 +1,63 @@
 body {
-    background-image: url(../images/bg6.png);
+    background-image: url(../images/bg8.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
     object-fit: fill;
-    background-size: 200%;
-    background-position: center;
+    background-size: 100%;
+    background-attachment: fixed;
 }
 
 header {
-    font-size: 45px;
     font-family: 'Kreon';
     position: relative;
     text-align: center;
-    padding: 10px;
-    padding-bottom: 0px;
+    padding: 70px;
+    padding-bottom: 50px;
 }
+
 /*---*/
-.container{
+.container {
     margin: 0 auto;
     position: relative;
 }
+
 .midbg {
-    background: linear-gradient(3deg, #1faa37, #8cc341, #8cc341, #18abb4);
-    background-size: 800% 800%;
+    background: linear-gradient(20deg, #637E5B 10%, #749562 40%, #558ea7 160%);
     -webkit-animation: AnimationName 11s ease infinite;
     -moz-animation: AnimationName 11s ease infinite;
     animation: AnimationName 11s ease infinite;
     max-width: 1200px;
-    max-height: 4500px;
-    margin: 0 auto;
+    min-width: fit-content;
+    height: 100%;
+    margin: auto;
+    padding-bottom: 5px;
 }
-.col-md-4{
+
+.col-sm-12,
+.col-xs-12,
+.col-lg-4 {
     padding-top: 100px;
+    padding: 10px;
 }
+
+.col-lg-4 {
+    transform: scale(90%);
+}
+
+.desc {
+    font-size: 25px;
+}
+
 h2 {
+    padding: 20px;
     font-family: 'Kreon';
     position: relative;
     text-align: center;
+}
+
+*,
+a>h2 {
+    color: #c8f09a;
+    text-shadow: #273f49 1px 1px 30px;
 }
 
 p {
@@ -46,6 +67,22 @@ p {
     text-align: center;
     font-size: 30px;
 }
+
+h5 {
+    padding-top: 50 px;
+    text-align: center;
+    font-family: 'Kreon';
+}
+
+a>h2 {
+    transform: scale(100%);
+    transition: all ease 0.2s;
+}
+a>h2:hover {
+    transform: scale(120%);
+    transition: all ease 0.2s;
+}
+
 img {
     max-height: 316px;
     max-width: 316x;
@@ -60,6 +97,26 @@ img:hover {
     transform: scale(105%);
     transition: all ease 0.2s;
     background-image: url(/gifs/A_Shot_Hike.gif);
+}
+
+.social-icons {
+    animation: bounceIn 1s infinite;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.icon {
+    display: inline-block;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease-in-out;
+    transition: all ease 0.2s;
+    transform: scale(100%);
+}
+
+.icon:hover {
+    transition: all ease 0.2s;
+    transform: scale(120%);
 }
 
 @-webkit-keyframes AnimationName {
