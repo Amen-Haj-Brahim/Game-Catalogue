@@ -20,10 +20,11 @@
 
 .midbg {
     background-color: yellowgreen;
-    width: 1200px;
-    height: 4800px;
-    margin: 0 auto;
-    padding: 10px;
+    max-width: 960px;
+    max-height: 4800px;
+    padding: 0 50px 0 50px;
+    margin: 0 auto 0;
+    display: block; 
 }
 
 .game-img {
@@ -31,7 +32,7 @@
     position: relative;
     transform: scale(120%);
     margin-left:120px;
-    bottom: 25%;
+    bottom: 27%;
     --a: 8deg;
     --s: 1;
     transform: scale(calc(100%*var(--s))) perspective(400px) rotate3d(var(--r, 1, -1), 0, calc(var(--i, 0)*var(--a)));
@@ -62,8 +63,7 @@
     text-shadow: 5px 5px 10px black;
     font-size: 23px;
     width: 500px;
-    left: 580px; 
-    position: relative;
+    padding-left: 500px;
     font-family: 'Kreon';
 }
 
@@ -72,13 +72,22 @@
     top: 50px;
     box-shadow: 0px 0px 10px 1px black;
     margin: 0 auto;
-    width: 1100px;
+    max-width: 1100px;
     height: 500px;
     border-radius: 10px;
     background-color: #3f9144;
     margin-bottom: 200px;
 }
 
+.screenshots_trailer {
+    box-shadow: 0px 0px 10px 1px black;
+    margin: 0 auto;
+    max-width: 1100px;
+    height: 1000px;
+    border-radius: 10px;
+    position: relative;
+    background-color: #3f9144;
+}
 /*---------------------------gallery---------------------*/
 /* Position the image container (needed to position the left and right arrows) */
 .container {
@@ -144,15 +153,6 @@
     bottom: 600px;
     position: relative;
     font-family: 'Kreon';
-}
-
-.screenshots_trailer {
-    box-shadow: 0px 0px 10px 1px black;
-    margin: 0 auto;
-    width: 1100px;
-    height: 1000px;
-    border-radius: 10px;
-    background-color: #3f9144;
 }
 
 iframe {
