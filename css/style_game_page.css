@@ -1,166 +1,148 @@
-.gradient-background {
-    background: linear-gradient(120deg, #49b4d2, #6c956c, #3f9144, yellowgreen);
-    background-size: 240% 240%;
-    animation: gradient-animation 12s ease infinite;
+section>h2,
+section>h3 {
+    text-shadow: 5px 5px 10px black;
+    color: rgb(217, 255, 140);
+    font-size: 70px;
+    font-family: 'Kreon';
+    margin-left: 2%;
+}
+
+section h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+html {
+    height: fit-content;
 }
 
 @keyframes gradient-animation {
     0% {
-        background-position: 30% 50%;
+        background-position: 10% 10%;
     }
 
     50% {
-        background-position: 100% 50%;
+        background-position: 60% 60%;
     }
 
     100% {
-        background-position: 30% 50%;
+        background-position: 10% 10%;
     }
+}
+
+body {
+    background-repeat: no-repeat;
+    background: linear-gradient(120deg, #49b4d2, #6c956c, #3f9144, yellowgreen);
+    background-size: 500% 500%;
+    background-position: center;
+    animation: gradient-animation 12s ease infinite;
+    height: fit-content;
 }
 
 .midbg {
     background-color: yellowgreen;
-    max-width: 960px;
-    max-height: 4800px;
-    padding: 0 50px 0 50px;
-    margin: 0 auto 0;
-    display: block; 
+    -webkit-animation: AnimationName 11s ease infinite;
+    -moz-animation: AnimationName 11s ease infinite;
+    animation: AnimationName 11s ease infinite;
+    max-width: 1200px;
+    min-width: fit-content;
+    min-height: 100vmin;
+    margin: auto;
+    padding: 1% 2%;
 }
 
-.game-img {
-    border-radius: 20px;
-    position: relative;
-    transform: scale(120%);
-    margin-left:120px;
-    bottom: 27%;
-    --a: 8deg;
-    --s: 1;
-    transform: scale(calc(100%*var(--s))) perspective(400px) rotate3d(var(--r, 1, -1), 0, calc(var(--i, 0)*var(--a)));
-    mask:
-        linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, #ffffff, rgba(255, 255, 255, 0.8) 100%) 100% 100%/250% 250%;
-    transition: .3s;
-    cursor: pointer;
-}
-
-.game-img:hover {
-    --i: -2;
-    mask-position: 0 0;
-    --s: 1.2;
-}
-
-.game-title {
-    text-shadow: 5px 5px 10px black;
-    color: rgb(217, 255, 140);
+.social-icons {
+    animation: bounceIn 1s infinite;
+    padding: 10%;
     margin: 0 auto;
-    position: relative;
-    left: 10%;
-    font-size: 70px;
-    font-family: 'Kreon';
+    text-align: center;
 }
+
+.icon {
+    color: yellow;
+    display: inline-block;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease-in-out;
+    transition: all ease 0.2s;
+    transform: scale(100%);
+}
+
+.icon:hover {
+    transition: all ease 0.2s;
+    transform: scale(120%);
+}
+
+img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+section {
+    border-radius: 10px;
+    background-color: #3f9144;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    margin: 40px auto;
+    padding: 50px 5px;
+}
+
+.carouselTest img {
+    margin: 0 auto;
+    transform: scale(80%);
+}
+
+#carouselExample {
+    transform: scale(90%);
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.row {
+    color: rgb(217, 255, 140);
+}
+
+
 
 .game-description {
     color: rgb(217, 255, 140);
     text-shadow: 5px 5px 10px black;
     font-size: 23px;
-    width: 500px;
-    padding-left: 500px;
     font-family: 'Kreon';
 }
 
-.upper_section {
+.if {
     position: relative;
-    top: 50px;
-    box-shadow: 0px 0px 10px 1px black;
-    margin: 0 auto;
-    max-width: 1100px;
-    height: 500px;
-    border-radius: 10px;
-    background-color: #3f9144;
-    margin-bottom: 200px;
-}
-
-.screenshots_trailer {
-    box-shadow: 0px 0px 10px 1px black;
-    margin: 0 auto;
-    max-width: 1100px;
-    height: 1000px;
-    border-radius: 10px;
-    position: relative;
-    background-color: #3f9144;
-}
-/*---------------------------gallery---------------------*/
-/* Position the image container (needed to position the left and right arrows) */
-.container {
-    transform: scale(50%);
-    height: 640px;
-    width: 480px;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-}
-
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-    cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 53%;
-    transform: scale(-350%);
-    width: auto;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-}
-
-.mySlides>img {
-    position: absolute;
-    margin: 0 auto;
+    overflow: hidden;
+    width: 100%;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px 1px black;
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 }
-
-.prev {
-    margin-left: -10%;
-}
-
-/* Position the "next button" to the right */
-.next {
-    border-radius: 3px 0 0 3px;
-    left: 1315px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-
-    transition: all ease 0.2s;
-}
-
-.screenshotstext {
+.card{
     text-shadow: 5px 5px 10px black;
-    -webkit-text-stroke: 0.5px black;
-    font-size: 50px;
-    transform: translate(0, 600px);
-    color: rgb(217, 255, 140);
-    left: 10%;
-    margin: 0 auto;
-    bottom: 600px;
-    position: relative;
-    font-family: 'Kreon';
+}
+.mycard a{
+    margin-top: 15%;
 }
 
-iframe {
+.mycard *{
     margin: 0 auto;
-    box-shadow: 0px 0px 10px 1px black;
-    border-radius: 20px;
-    margin-top: 1000px;
-    margin-bottom: 200px;
-    height: 720px;
-    width: 1280px;
+}
+iframe {
+    box-shadow: 0px 0px 10px 2px black;
+    margin: 0 auto;
+    display: block;
+}
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
 }

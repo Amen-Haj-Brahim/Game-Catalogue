@@ -2,8 +2,9 @@ body {
     background-image: url(../images/bg8.jpg);
     background-repeat: no-repeat;
     object-fit: fill;
-    background-size: 100%;
+    background-size: 120%;
     background-attachment: fixed;
+    background-position: 20% 0%;
 }
 
 header {
@@ -69,7 +70,6 @@ p {
 }
 
 h5 {
-    padding-top: 50 px;
     text-align: center;
     font-family: 'Kreon';
 }
@@ -78,6 +78,7 @@ a>h2 {
     transform: scale(100%);
     transition: all ease 0.2s;
 }
+
 a>h2:hover {
     transform: scale(120%);
     transition: all ease 0.2s;
