@@ -1,0 +1,148 @@
+section>h2,
+section>h3 {
+    text-shadow: 5px 5px 10px black;
+    color: rgb(217, 255, 140);
+    font-size: 70px;
+    font-family: 'Kreon';
+    margin-left: 2%;
+}
+
+section h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+html {
+    height: fit-content;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 10% 10%;
+    }
+
+    50% {
+        background-position: 60% 60%;
+    }
+
+    100% {
+        background-position: 10% 10%;
+    }
+}
+
+body {
+    background-repeat: no-repeat;
+    background: linear-gradient(120deg, #49b4d2, #6c956c, #3f9144, yellowgreen);
+    background-size: 500% 500%;
+    background-position: center;
+    animation: gradient-animation 12s ease infinite;
+    height: fit-content;
+}
+
+.midbg {
+    background-color: yellowgreen;
+    -webkit-animation: AnimationName 11s ease infinite;
+    -moz-animation: AnimationName 11s ease infinite;
+    animation: AnimationName 11s ease infinite;
+    max-width: 1200px;
+    min-width: fit-content;
+    min-height: 100vmin;
+    margin: auto;
+    padding: 1% 2%;
+}
+
+.social-icons {
+    animation: bounceIn 1s infinite;
+    padding: 10%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.icon {
+    color: yellow;
+    display: inline-block;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease-in-out;
+    transition: all ease 0.2s;
+    transform: scale(100%);
+}
+
+.icon:hover {
+    transition: all ease 0.2s;
+    transform: scale(120%);
+}
+
+img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+section {
+    border-radius: 10px;
+    background-color: #3f9144;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    margin: 40px auto;
+    padding: 50px 5px;
+}
+
+.carouselTest img {
+    margin: 0 auto;
+    transform: scale(80%);
+}
+
+#carouselExample {
+    transform: scale(90%);
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.row {
+    color: rgb(217, 255, 140);
+}
+
+
+
+.game-description {
+    color: rgb(217, 255, 140);
+    text-shadow: 5px 5px 10px black;
+    font-size: 23px;
+    font-family: 'Kreon';
+}
+
+.if {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 20px;
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+.card{
+    text-shadow: 5px 5px 10px black;
+}
+.mycard a{
+    margin-top: 15%;
+}
+
+.mycard *{
+    margin: 0 auto;
+}
+iframe {
+    box-shadow: 0px 0px 10px 2px black;
+    margin: 0 auto;
+    display: block;
+}
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
